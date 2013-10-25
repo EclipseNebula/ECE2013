@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_9C3IwDznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_9C3v2DznEeOr7bcr8S9GaQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_9C3v0DznEeOr7bcr8S9GaQ" label="com.remainsoftware.ece2013.nebula" width="1280" height="720">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_9C4W5TznEeOr7bcr8S9GaQ" selectedElement="_9C4W5jznEeOr7bcr8S9GaQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_9C4W5jznEeOr7bcr8S9GaQ" elementId="perspective.initial" label="Initial">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_9C4W5zznEeOr7bcr8S9GaQ" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_rf60cDz9EeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="__eEgUD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_9C4W6DznEeOr7bcr8S9GaQ" elementId="" containerData="6">
+            <children xsi:type="basic:Part" xmi:id="_fJkMQD2AEeOKpp9vTmDyEw" elementId="" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.LogoPart"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_Usk64D1-EeOKpp9vTmDyEw" elementId="perspective.about" label="About">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Uslh8D1-EeOKpp9vTmDyEw" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_Uslh8T1-EeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_92KHUD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_Uslh8z1-EeOKpp9vTmDyEw" elementId="" containerData="6">
+            <children xsi:type="basic:Part" xmi:id="_Uslh9D1-EeOKpp9vTmDyEw" elementId="aboutView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.AboutView" label="About Me" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_Uslh9T1-EeOKpp9vTmDyEw" elementId="projectView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.project.NebulaProject" label="Nebula Project" closeable="true"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_g7sYkD19EeOKpp9vTmDyEw" elementId="perspective.transition" label="Transition">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_g7sYkT19EeOKpp9vTmDyEw" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_g7sYkj19EeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_uVPXID1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_g7sYlD19EeOKpp9vTmDyEw" elementId="" containerData="6">
+            <children xsi:type="basic:Part" xmi:id="_g7sYmD19EeOKpp9vTmDyEw" elementId="transitionDemo" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo" label="Demo" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_Nbu98D2TEeOKpp9vTmDyEw" elementId="githubView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.stw.Github" label="Github" closeable="true"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_g0yp4D1-EeOKpp9vTmDyEw" elementId="perspective.oscilloscope" label="Oscilloscope">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_g0yp4T1-EeOKpp9vTmDyEw" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_g0yp4j1-EeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_pm5YsD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_g0yp5D1-EeOKpp9vTmDyEw" elementId="" containerData="6">
+            <children xsi:type="basic:Part" xmi:id="_g0yp5T1-EeOKpp9vTmDyEw" elementId="scopeView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.Oscilloscope" label="Oscilloscope" closeable="true"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_koHoMD2XEeOKpp9vTmDyEw" elementId="perspective.gantt" label="Gantt">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_koHoMT2XEeOKpp9vTmDyEw" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_koHoMj2XEeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_koHoMz2XEeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_koHoND2XEeOKpp9vTmDyEw" elementId="" containerData="6">
+            <children xsi:type="basic:Part" xmi:id="_koHoNT2XEeOKpp9vTmDyEw" elementId="ganttView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.gantt.GanttTester" label="Gantt" closeable="true"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_sbbaMD2cEeOKpp9vTmDyEw" elementId="perspective.grid" label="Grid">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_sbbaMT2cEeOKpp9vTmDyEw" containerData="" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_sbbaMj2cEeOKpp9vTmDyEw" elementId="" containerData="1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_sbbaMz2cEeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_zdcrcD2cEeOKpp9vTmDyEw" elementId="com.remainsoftware.ece2013.nebula.partsashcontainer.0" containerData="4">
+            <children xsi:type="basic:Part" xmi:id="_sbbaNT2cEeOKpp9vTmDyEw" elementId="gridSum" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.grid.Sum" label="Sum" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="__x6GsD2cEeOKpp9vTmDyEw" elementId="gridSpan" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.grid.Span" label="Span" closeable="true"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_1ja5cD2cEeOKpp9vTmDyEw" elementId="com.remainsoftware.ece2013.nebula.partsashcontainer.1" containerData="4">
+            <children xsi:type="basic:Part" xmi:id="_BrbNED2dEeOKpp9vTmDyEw" elementId="gridrowSpan" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.grid.Wrap" label="Justify" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_BxYrID2dEeOKpp9vTmDyEw" elementId="gridCheckbox" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.grid.Checkbox" label="Checkbox" closeable="true"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <sharedElements xsi:type="basic:Part" xmi:id="_M8KHQDzpEeOr7bcr8S9GaQ" elementId="menuPart" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.Menu" label="Menu">
+      <tags>NoMove</tags>
+    </sharedElements>
+    <trimBars xmi:id="_9C4W6jznEeOr7bcr8S9GaQ">
+      <children xsi:type="menu:ToolBar" xmi:id="_9C4W6zznEeOr7bcr8S9GaQ" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:ToolControl" xmi:id="_CuS4MD0BEeOKpp9vTmDyEw" elementId="com.remainsoftware.ece2013.nebula.toolcontrol.0"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_9C3v3DznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.quitCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.QuitHandler" command="_9C3v2zznEeOr7bcr8S9GaQ"/>
+  <handlers xmi:id="_9C3v4DznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.openCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.OpenHandler" command="_9C3v3zznEeOr7bcr8S9GaQ"/>
+  <handlers xmi:id="_9C3v4zznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.saveCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.SaveHandler" command="_9C3v4jznEeOr7bcr8S9GaQ"/>
+  <handlers xmi:id="_9C3v5jznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.aboutCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.AboutHandler" command="_9C3v5TznEeOr7bcr8S9GaQ"/>
+  <bindingTables xmi:id="_9C3v3TznEeOr7bcr8S9GaQ" bindingContext="_9C3v2DznEeOr7bcr8S9GaQ">
+    <bindings xmi:id="_9C3v3jznEeOr7bcr8S9GaQ" keySequence="M1+Q" command="_9C3v2zznEeOr7bcr8S9GaQ"/>
+    <bindings xmi:id="_9C3v4TznEeOr7bcr8S9GaQ" keySequence="M1+O" command="_9C3v3zznEeOr7bcr8S9GaQ"/>
+    <bindings xmi:id="_9C3v5DznEeOr7bcr8S9GaQ" keySequence="M1+S" command="_9C3v4jznEeOr7bcr8S9GaQ"/>
+    <bindings xmi:id="_9C3v5zznEeOr7bcr8S9GaQ" keySequence="M1+A" command="_9C3v5TznEeOr7bcr8S9GaQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_9C3v2DznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_9C3v2TznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_9C3v2jznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_9C3v2zznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_9C3v3zznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.open" commandName="openCommand"/>
+  <commands xmi:id="_9C3v4jznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_9C3v5TznEeOr7bcr8S9GaQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_9C3v0TznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_9C3v0jznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_9C3v0zznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_9C3v1DznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_9C3v1TznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_9C3v1jznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_9C3v1zznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
