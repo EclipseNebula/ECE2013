@@ -19,6 +19,7 @@ public class BasePart {
 	protected static final String OSCILLOSCOPE = "perspective.oscilloscope";
 	protected static final String GANTT = "perspective.gantt";
 	protected static final String GRID = "perspective.grid";
+	protected static final String GEOMAP = "perspective.geomap";
 
 	@Inject
 	MApplication application;
