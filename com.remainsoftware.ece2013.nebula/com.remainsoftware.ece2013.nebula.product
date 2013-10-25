@@ -80,6 +80,7 @@
       <plugin id="org.eclipse.jface.databinding"/>
       <plugin id="org.eclipse.nebula.effects.stw"/>
       <plugin id="org.eclipse.nebula.widgets.ganttchart"/>
+      <plugin id="org.eclipse.nebula.widgets.geomap"/>
       <plugin id="org.eclipse.nebula.widgets.grid"/>
       <plugin id="org.eclipse.nebula.widgets.pshelf"/>
       <plugin id="org.eclipse.osgi"/>

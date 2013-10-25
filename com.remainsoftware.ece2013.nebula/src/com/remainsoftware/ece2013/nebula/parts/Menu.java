@@ -25,6 +25,7 @@ import com.remainsoftware.ece2013.nebula.snippets.gantt.GanttTester;
 import com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo;
 
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Label;
 
 public class Menu extends BasePart {
 
@@ -153,6 +154,34 @@ public class Menu extends BasePart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				switchPerspective(GRID);
+			}
+		});
+		
+		PShelfItem shelfGeomap = new PShelfItem(shelf_1, 0);
+		shelfGeomap.setText("GeoMap");
+		shelfGeomap.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382745122_web.png"));
+		shelfGeomap.getBody().setLayout(new GridLayout(1, false));
+		
+		Link geoLink1 = new Link(shelfGeomap.getBody(), 0);
+		geoLink1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		geoLink1.setText("<a>Simple</a>");
+		geoLink1.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		geoLink1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(GEOMAP);
+				openView("simpleGeoMap");
+			}
+		});
+		
+		Link geoLink2 = new Link(shelfGeomap.getBody(), 0);
+		geoLink2.setText("<a>Configured</a>");
+		geoLink2.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		geoLink2.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(GEOMAP);
+				openView("configuredGeoMap");
 			}
 		});
 
