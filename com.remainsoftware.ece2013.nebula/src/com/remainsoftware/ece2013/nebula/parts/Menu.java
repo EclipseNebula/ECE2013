@@ -12,6 +12,7 @@ import org.eclipse.nebula.widgets.pshelf.RedmondShelfRenderer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
@@ -19,12 +20,10 @@ import org.eclipse.swt.widgets.Link;
 import org.eclipse.wb.swt.ResourceManager;
 import org.eclipse.wb.swt.SWTResourceManager;
 
+import com.remainsoftware.ece2013.nebula.gantt.GanttTester;
 import com.remainsoftware.ece2013.nebula.parts.project.NebulaProject;
 import com.remainsoftware.ece2013.nebula.parts.stw.Github;
-import com.remainsoftware.ece2013.nebula.snippets.gantt.GanttTester;
 import com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo;
-
-import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Label;
 
 public class Menu extends BasePart {
@@ -157,6 +156,25 @@ public class Menu extends BasePart {
 			}
 		});
 		
+		PShelfItem shelfVis = new PShelfItem(shelf_1, 0);
+		shelfVis.setText("Visualization");
+		shelfVis.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382840419_15-Dashboard .png"));
+		shelfVis.getBody().setLayout(new GridLayout(1, false));
+		
+		Link visLink = new Link(shelfVis.getBody(), 0);
+		visLink.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		visLink.setText("<a>Examples</a>");
+		visLink.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		visLink.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(VIS);
+				openView("intensityView");
+				openView("knobView");
+				openView("combinedView");
+			}
+		});
+		
 		PShelfItem shelfGeomap = new PShelfItem(shelf_1, 0);
 		shelfGeomap.setText("GeoMap");
 		shelfGeomap.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382745122_web.png"));
@@ -195,14 +213,31 @@ public class Menu extends BasePart {
 				SWT.NORMAL));
 		link1Scope.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
 				false, 1, 1));
-		link1Scope.setText("<a>Example 1</a>");
+		link1Scope.setText("<a>Many Scopes</a>");
+		link1Scope.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(OSCILLOSCOPE);
+				openView("scopeMany");
+			}
+		});
+		
+		
 
 		Link link2Scope = new Link(shelfScope.getBody(), SWT.NONE);
 		link2Scope.setFont(SWTResourceManager.getFont("Segoe UI", 13,
 				SWT.NORMAL));
 		link2Scope.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
 				false, 1, 1));
-		link2Scope.setText("<a>Example 2</a>");
+		link2Scope.setText("<a>Multi Channel</a>");
+		link2Scope.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(OSCILLOSCOPE);
+				openView("scopeMultiChannel");
+			}
+		});
+		
 
 		Link link3Scope = new Link(shelfScope.getBody(), SWT.NONE);
 		link3Scope.setFont(SWTResourceManager.getFont("Segoe UI", 13,
@@ -210,6 +245,13 @@ public class Menu extends BasePart {
 		link3Scope.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
 				false, 1, 1));
 		link3Scope.setText("<a>Let's hear some blues</a>");
+		link3Scope.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(OSCILLOSCOPE);
+				openView("scopeMusicView");
+			}
+		});
 
 		PShelfItem lastItem = new PShelfItem(shelf, SWT.NONE);
 		lastItem.setText("");
