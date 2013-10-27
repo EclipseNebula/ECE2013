@@ -24,6 +24,7 @@ import com.remainsoftware.ece2013.nebula.gantt.GanttTester;
 import com.remainsoftware.ece2013.nebula.parts.project.NebulaProject;
 import com.remainsoftware.ece2013.nebula.parts.stw.Github;
 import com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo;
+import org.eclipse.swt.widgets.Label;
 
 public class Menu extends BasePart {
 
@@ -174,6 +175,22 @@ public class Menu extends BasePart {
 			}
 		});
 		
+		PShelfItem shelfItem = new PShelfItem(shelf_1, 0);
+		shelfItem.setText("Gallery");
+		shelfItem.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382926463_Picture.png"));
+		shelfItem.getBody().setLayout(new GridLayout(1, false));
+		
+		Link galleryLink = new Link(shelfItem.getBody(), 0);
+		galleryLink.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		galleryLink.setText("<a>Gallery</a>");
+		galleryLink.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		galleryLink.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(GALLERY);
+			}
+		});
+		
 		PShelfItem shelfGeomap = new PShelfItem(shelf_1, 0);
 		shelfGeomap.setText("GeoMap");
 		shelfGeomap.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382745122_web.png"));
@@ -199,6 +216,23 @@ public class Menu extends BasePart {
 			public void widgetSelected(SelectionEvent e) {
 				switchPerspective(GEOMAP);
 				openView("configuredGeoMap");
+			}
+		});
+		
+		PShelfItem shelfXViewer = new PShelfItem(shelf_1, 0);
+		shelfXViewer.setText("XViewer");
+		shelfXViewer.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382923877_eye.png"));
+		shelfXViewer.getBody().setLayout(new GridLayout(1, false));
+		
+		Link xviewerLink1 = new Link(shelfXViewer.getBody(), 0);
+		xviewerLink1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		xviewerLink1.setText("<a>Example Test</a>");
+		xviewerLink1.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		xviewerLink1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(XVIEWER);
+				openView("xView");
 			}
 		});
 

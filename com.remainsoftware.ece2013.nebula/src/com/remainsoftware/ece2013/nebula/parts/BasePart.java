@@ -20,7 +20,9 @@ public class BasePart {
 	protected static final String GANTT = "perspective.gantt";
 	protected static final String GRID = "perspective.grid";
 	protected static final String VIS = "perspective.vis";
+	protected static final String GALLERY = "perspective.gallery";
 	protected static final String GEOMAP = "perspective.geomap";
+	protected static final String XVIEWER = "perspective.xviewer";
 
 	@Inject
 	MApplication application;

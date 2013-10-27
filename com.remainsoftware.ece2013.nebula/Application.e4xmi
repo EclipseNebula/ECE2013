@@ -81,6 +81,21 @@
           </children>
         </children>
       </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_BuQ4AD9FEeObX4rW0lZQQg" elementId="perspective.xviewer" label="XViewer">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_BuQ4AT9FEeObX4rW0lZQQg" containerData="" horizontal="true">
+          <children xsi:type="advanced:Placeholder" xmi:id="_BuQ4Aj9FEeObX4rW0lZQQg" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          <children xsi:type="basic:Part" xmi:id="_BuQ4Bz9FEeObX4rW0lZQQg" elementId="xView" containerData="6" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.xviewer.MyXViewerTest" label="XViewer" closeable="true"/>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_nbYrAD9NEeObX4rW0lZQQg" elementId="perspective.gallery" label="Gallery">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_nbYrAT9NEeObX4rW0lZQQg" containerData="" horizontal="true">
+          <children xsi:type="advanced:Placeholder" xmi:id="_nbYrAj9NEeObX4rW0lZQQg" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          <children xsi:type="basic:PartStack" xmi:id="_vvlV0D9NEeObX4rW0lZQQg" elementId="com.remainsoftware.ece2013.nebula.partstack.0" containerData="4">
+            <children xsi:type="basic:Part" xmi:id="_0QR50D9NEeObX4rW0lZQQg" elementId="gallery1" containerData="6" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.gallery.GalleryView2" label="Gallery 1" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_nbYrAz9NEeObX4rW0lZQQg" elementId="gallery2" containerData="6" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.gallery.GalleryView1" label="Gallery 2" closeable="true"/>
+          </children>
+        </children>
+      </children>
     </children>
     <sharedElements xsi:type="basic:Part" xmi:id="_M8KHQDzpEeOr7bcr8S9GaQ" elementId="menuPart" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.Menu" label="Menu">
       <tags>NoMove</tags>

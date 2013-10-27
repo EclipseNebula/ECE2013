@@ -23,9 +23,12 @@ Require-Bundle: javax.inject;bundle-version="1.0.0",
  org.eclipse.nebula.widgets.oscilloscope;bundle-version="1.2.0",
  org.eclipse.nebula.visualization.widgets;bundle-version="1.0.0",
  org.eclipse.draw2d,
- org.eclipse.nebula.visualization.xygraph;bundle-version="1.0.0"
+ org.eclipse.nebula.visualization.xygraph;bundle-version="1.0.0",
+ org.eclipse.nebula.widgets.xviewer;bundle-version="0.9.9",
+ org.eclipse.nebula.widgets.gallery;bundle-version="0.6.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Import-Package: javax.annotation;version="1.0.0"
 Bundle-ClassPath: lib/opal-0.9.5.2.jar,
  .,
- lib/Tarsos-latest.jar
+ lib/Tarsos-latest.jar,
+ lib/org.eclipse.nebula.widgets.xviewer.example_0.9.9.201310241250.jar

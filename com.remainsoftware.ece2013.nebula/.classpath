@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/org.eclipse.nebula.widgets.xviewer.example_0.9.9.201310241250.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/Tarsos-latest.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/opal-0.9.5.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
