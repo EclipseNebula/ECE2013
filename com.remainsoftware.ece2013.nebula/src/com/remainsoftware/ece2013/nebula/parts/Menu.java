@@ -24,7 +24,6 @@ import com.remainsoftware.ece2013.nebula.gantt.GanttTester;
 import com.remainsoftware.ece2013.nebula.parts.project.NebulaProject;
 import com.remainsoftware.ece2013.nebula.parts.stw.Github;
 import com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo;
-import org.eclipse.swt.widgets.Label;
 
 public class Menu extends BasePart {
 
@@ -250,6 +249,20 @@ public class Menu extends BasePart {
 			public void widgetSelected(SelectionEvent e) {
 				switchPerspective(OSCILLOSCOPE);
 				openView("scopeMusicView");
+			}
+		});
+
+		Link link4Scope = new Link(shelfScope.getBody(), SWT.NONE);
+		link4Scope.setFont(SWTResourceManager.getFont("Segoe UI", 13,
+				SWT.NORMAL));
+		link4Scope.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
+				false, 1, 1));
+		link4Scope.setText("<a>More Audio</a>");
+		link4Scope.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(OSCILLOSCOPE);
+				openView("scopeMusicView2");
 			}
 		});
 

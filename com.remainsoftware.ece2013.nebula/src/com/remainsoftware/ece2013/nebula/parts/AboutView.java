@@ -14,7 +14,6 @@ import org.eclipse.nebula.effects.stw.transitions.SlideTransition;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
@@ -31,6 +30,7 @@ public class AboutView extends BasePart {
 	private Composite comp1 = null;
 	private Composite comp2 = null;
 	private Composite comp3 = null;
+	private Composite comp4 = null;
 
 	private TabFolder tf;
 
@@ -44,16 +44,20 @@ public class AboutView extends BasePart {
 		tf = new TabFolder(container, SWT.NONE);
 
 		TabItem tbi1 = new TabItem(tf, SWT.NONE);
-		tbi1.setText("Name");
+		tbi1.setText("Wim Jongman");
 		tbi1.setControl(getComp1(tf));
 
 		TabItem tbi2 = new TabItem(tf, SWT.NONE);
-		tbi2.setText("Brag Rights");
+		tbi2.setText("Google");
 		tbi2.setControl(getComp2(tf));
 
 		TabItem tbi3 = new TabItem(tf, SWT.NONE);
 		tbi3.setText("Company");
 		tbi3.setControl(getComp3(tf));
+		
+		TabItem tbi4 = new TabItem(tf, SWT.NONE);
+		tbi4.setText("http://github.com/EclipseNebula/ECE2013");
+		tbi4.setControl(getComp4(tf));
 
 		TransitionManager _tm = new TransitionManager(new Transitionable() {
 			public void addSelectionListener(SelectionListener listener) {
@@ -124,6 +128,16 @@ public class AboutView extends BasePart {
 			b.setUrl("http://www.weltevree.com/");
 		}
 		return comp3;
+	}
+	
+	private Composite getComp4(Composite parent) {
+		if (null == comp4) {
+			comp4 = new Composite(parent, SWT.NONE);
+			comp4.setLayout(new FillLayout());
+			Browser b = new Browser(comp4, SWT.None);
+			b.setUrl("http://github.com/EclipseNebula/ECE2013");
+		}
+		return comp4;
 	}
 
 	public static void open(EPartService partService) {

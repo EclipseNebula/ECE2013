@@ -101,7 +101,7 @@ public class GithubStyleComposite extends Composite implements
 		viewer.setContentProvider(new ContentProvider());
 
 		viewer.addSelectionChangedListener(this);
-		viewer.setInput(new XFile(null, "parent", "parent", true));
+		viewer.setInput(new XFile(null, "", "parent", true));
 
 	}
 

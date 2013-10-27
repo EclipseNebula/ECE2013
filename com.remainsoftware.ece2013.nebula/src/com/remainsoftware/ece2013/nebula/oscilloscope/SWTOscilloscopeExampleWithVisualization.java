@@ -23,7 +23,6 @@ import org.eclipse.nebula.widgets.oscilloscope.multichannel.OscilloscopeStackAda
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
@@ -39,7 +38,10 @@ import be.hogent.tarsos.dsp.AudioDispatcher;
 import be.hogent.tarsos.dsp.AudioEvent;
 import be.hogent.tarsos.dsp.AudioProcessor;
 
-public class SWTOscilloscopeExample implements ISelectionChangedListener {
+import com.remainsoftware.ece2013.nebula.visualization.MeterComposite;
+
+public class SWTOscilloscopeExampleWithVisualization implements
+		ISelectionChangedListener {
 
 	protected Shell shell;
 	private Button startStop;
@@ -48,7 +50,7 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 	private int[] scopeBuffer = new int[0];
 	private Thread thread;
 	private OscilloscopeDispatcher scopeDispatcher;
-	private long time;
+	private MeterComposite meterComposite;
 
 	/**
 	 * Launch the application.
@@ -57,7 +59,7 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			SWTOscilloscopeExample window = new SWTOscilloscopeExample();
+			SWTOscilloscopeExampleWithVisualization window = new SWTOscilloscopeExampleWithVisualization();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -75,8 +77,7 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 		shell.setLayout(new FillLayout());
 
 		Composite composite = new Composite(shell, SWT.NONE);
-		composite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, false, false,
-				1, 1));
+
 		createContents(composite);
 		shell.open();
 		shell.layout();
@@ -85,9 +86,8 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 				display.sleep();
 			}
 		}
-		if (audioDispatcher != null) {
+		if (audioDispatcher != null)
 			audioDispatcher.stop();
-		}
 	}
 
 	/**
@@ -96,7 +96,12 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 	@PostConstruct
 	protected void createContents(Composite composite) {
 
-		composite.setLayout(new GridLayout(2, false));
+		GridLayout gl_composite = new GridLayout(2, false);
+		gl_composite.verticalSpacing = 0;
+		gl_composite.marginWidth = 0;
+		gl_composite.marginHeight = 0;
+		gl_composite.horizontalSpacing = 0;
+		composite.setLayout(gl_composite);
 
 		ComboViewer comboViewer = new ComboViewer(composite, SWT.NONE);
 		// comboViewer.setSorter(new Sorter());
@@ -109,15 +114,16 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 		comboViewer.addSelectionChangedListener(this);
 
 		startStop = new Button(composite, SWT.NONE);
-		startStop.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false,
-				false, 1, 1));
+		startStop.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,
+				1, 1));
 		startStop.setText("Stop");
 		startStop.setEnabled(false);
 		startStop.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				scopeDispatcher.stop();
-				SWTOscilloscopeExample.this.audioDispatcher.stop();
+				SWTOscilloscopeExampleWithVisualization.this.audioDispatcher
+						.stop();
 				startStop.setEnabled(false);
 				audioDispatcher.stop();
 			}
@@ -125,8 +131,13 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 
 		scope = new Oscilloscope(composite, SWT.NONE);
 		scope.setBackground(SWTResourceManager.getColor(SWT.COLOR_WHITE));
-		scope.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
+		scope.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
 		scope.setLayout(new GridLayout(1, false));
+
+		meterComposite = new MeterComposite(composite, SWT.NONE);
+		meterComposite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true,
+				true, 1, 1));
+
 	}
 
 	@Override
@@ -145,28 +156,15 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 			@Override
 			public void hookChangeAttributes() {
 				super.hookChangeAttributes();
-				scope.setForeground(0, getActiveForegoundColor());
 				scope.setProgression(0, getProgression());
+				scope.setForeground(0, getInactiveForegoundColor());
+				scope.setBackground(Display.getDefault().getSystemColor(
+						SWT.COLOR_WHITE));
 			}
 
 			@Override
 			public boolean isTailSizeMax() {
 				return true;
-			}
-
-			@Override
-			public Color getActiveForegoundColor() {
-				return Display.getDefault().getSystemColor(SWT.COLOR_BLACK);
-			}
-
-			@Override
-			public Color getInactiveForegoundColor() {
-				return Display.getDefault().getSystemColor(SWT.COLOR_BLACK);
-			}
-
-			@Override
-			public Image getBackgroundImage() {
-				return null;
 			}
 
 			@Override
@@ -177,6 +175,11 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 			@Override
 			public int getSteadyPosition() {
 				return 0;
+			}
+
+			@Override
+			public Image getBackgroundImage() {
+				return null;
 			}
 
 			@Override
@@ -194,6 +197,9 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 			@Override
 			public void stackEmpty(Oscilloscope scope, int channel) {
 				scope.setValues(0, scopeBuffer);
+				if (scopeBuffer.length > 0)
+					if (scopeBuffer[0] > 0)
+						meterComposite.setValue(scopeBuffer[0]);
 			}
 		});
 
@@ -234,7 +240,8 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 
 			@Override
 			public boolean process(AudioEvent audioEvent) {
-				SWTOscilloscopeExample.this.process(audioEvent);
+				SWTOscilloscopeExampleWithVisualization.this
+						.process(audioEvent);
 				return true;
 			}
 		});
@@ -244,10 +251,6 @@ public class SWTOscilloscopeExample implements ISelectionChangedListener {
 	}
 
 	public boolean process(AudioEvent audioEvent) {
-
-		System.err.println((System.currentTimeMillis() - time) / 1000);
-		time = System.currentTimeMillis();
-
 		float[] audioBuffer = audioEvent.getFloatBuffer();
 		final int[] scopeBuffer = new int[audioBuffer.length];
 		for (int i = 0; i < audioBuffer.length; ++i) {

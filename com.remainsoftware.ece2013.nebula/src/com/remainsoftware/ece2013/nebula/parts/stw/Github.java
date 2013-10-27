@@ -51,10 +51,8 @@ public class Github {
 			}
 
 			public double getDirection(int toIndex, int fromIndex) {
-				if (toIndex > fromIndex)
+
 					return Transition.DIR_LEFT;
-				else
-					return Transition.DIR_RIGHT;
 			}
 
 			@Override

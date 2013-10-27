@@ -4,9 +4,7 @@
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_9C4W5TznEeOr7bcr8S9GaQ" selectedElement="_9C4W5jznEeOr7bcr8S9GaQ">
       <children xsi:type="advanced:Perspective" xmi:id="_9C4W5jznEeOr7bcr8S9GaQ" elementId="perspective.initial" label="Initial">
         <children xsi:type="basic:PartSashContainer" xmi:id="_9C4W5zznEeOr7bcr8S9GaQ" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_rf60cDz9EeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="__eEgUD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="__eEgUD1-EeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_9C4W6DznEeOr7bcr8S9GaQ" elementId="" containerData="6">
             <children xsi:type="basic:Part" xmi:id="_fJkMQD2AEeOKpp9vTmDyEw" elementId="" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.LogoPart"/>
           </children>
@@ -14,9 +12,7 @@
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_Usk64D1-EeOKpp9vTmDyEw" elementId="perspective.about" label="About">
         <children xsi:type="basic:PartSashContainer" xmi:id="_Uslh8D1-EeOKpp9vTmDyEw" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_Uslh8T1-EeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_92KHUD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_92KHUD1-EeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_Uslh8z1-EeOKpp9vTmDyEw" elementId="" containerData="6">
             <children xsi:type="basic:Part" xmi:id="_Uslh9D1-EeOKpp9vTmDyEw" elementId="aboutView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.AboutView" label="About Me" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_Uslh9T1-EeOKpp9vTmDyEw" elementId="projectView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.project.NebulaProject" label="Nebula Project" closeable="true"/>
@@ -25,32 +21,27 @@
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_g7sYkD19EeOKpp9vTmDyEw" elementId="perspective.transition" label="Transition">
         <children xsi:type="basic:PartSashContainer" xmi:id="_g7sYkT19EeOKpp9vTmDyEw" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_g7sYkj19EeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_uVPXID1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_uVPXID1-EeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_g7sYlD19EeOKpp9vTmDyEw" elementId="" containerData="6">
             <children xsi:type="basic:Part" xmi:id="_g7sYmD19EeOKpp9vTmDyEw" elementId="transitionDemo" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.snippets.transition.STWDemo" label="Demo" closeable="true"/>
-            <children xsi:type="basic:Part" xmi:id="_Nbu98D2TEeOKpp9vTmDyEw" elementId="githubView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.stw.Github" label="Github" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_Nbu98D2TEeOKpp9vTmDyEw" elementId="githubView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.stw.Github" label="Github Style" closeable="true"/>
           </children>
         </children>
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_g0yp4D1-EeOKpp9vTmDyEw" elementId="perspective.oscilloscope" label="Oscilloscope">
         <children xsi:type="basic:PartSashContainer" xmi:id="_g0yp4T1-EeOKpp9vTmDyEw" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_g0yp4j1-EeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_pm5YsD1-EeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_pm5YsD1-EeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_g0yp5D1-EeOKpp9vTmDyEw" elementId="" containerData="6">
             <children xsi:type="basic:Part" xmi:id="_g0yp5T1-EeOKpp9vTmDyEw" elementId="scopeMany" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.oscilloscope.MultiScope_Basic" label="Many" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_Jf6NQD5yEeOLIvcbDHpGGA" elementId="scopeMultiChannel" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.oscilloscope.MultiScope_ScopeWithDataAndProgression10Channels" label="MultiChannel" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_EKeZoD5yEeOLIvcbDHpGGA" elementId="scopeMusicView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.oscilloscope.SWTOscilloscopeExample" label="Blues" closeable="true"/>
+            <children xsi:type="basic:Part" xmi:id="_U8D5sD8xEeObX4rW0lZQQg" elementId="scopeMusicView2" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.oscilloscope.SWTOscilloscopeExampleWithVisualization" label="More Blues" closeable="true"/>
           </children>
         </children>
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_koHoMD2XEeOKpp9vTmDyEw" elementId="perspective.gantt" label="Gantt">
         <children xsi:type="basic:PartSashContainer" xmi:id="_koHoMT2XEeOKpp9vTmDyEw" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_koHoMj2XEeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_koHoMz2XEeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_koHoMz2XEeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_koHoND2XEeOKpp9vTmDyEw" elementId="" containerData="6">
             <children xsi:type="basic:Part" xmi:id="_koHoNT2XEeOKpp9vTmDyEw" elementId="ganttView" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.gantt.GanttTester" label="Gantt" closeable="true"/>
           </children>
@@ -58,9 +49,7 @@
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_sbbaMD2cEeOKpp9vTmDyEw" elementId="perspective.geomap" label="GeoMap">
         <children xsi:type="basic:PartSashContainer" xmi:id="_sbbaMT2cEeOKpp9vTmDyEw" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_sbbaMj2cEeOKpp9vTmDyEw" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_sbbaMz2cEeOKpp9vTmDyEw" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_sbbaMz2cEeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartStack" xmi:id="_tR2jgD2qEeOLIvcbDHpGGA" elementId="com.remainsoftware.ece2013.nebula.partstack.0" containerData="4">
             <children xsi:type="basic:Part" xmi:id="_QsX4MD2nEeOLIvcbDHpGGA" elementId="simpleGeoMap" containerData="4" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.geomap.SimpleGeoMap" label="Simple GeoMap" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_wA9OED2qEeOLIvcbDHpGGA" elementId="configuredGeoMap" containerData="4" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.geomap.ConfiguredGeoMap" label="Configured GeoMap" closeable="true"/>
@@ -69,9 +58,7 @@
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_MS0eAD2nEeOLIvcbDHpGGA" elementId="perspective.grid" label="Grid">
         <children xsi:type="basic:PartSashContainer" xmi:id="_MS0eAT2nEeOLIvcbDHpGGA" containerData="" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_MS0eAj2nEeOLIvcbDHpGGA" elementId="" containerData="1">
-            <children xsi:type="advanced:Placeholder" xmi:id="_MS1FED2nEeOLIvcbDHpGGA" elementId="" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_MS1FED2nEeOLIvcbDHpGGA" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
           <children xsi:type="basic:PartSashContainer" xmi:id="_MS1FET2nEeOLIvcbDHpGGA" elementId="" containerData="4">
             <children xsi:type="basic:Part" xmi:id="_MS1FEj2nEeOLIvcbDHpGGA" elementId="gridSum" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Sum" label="Sum" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_MS1FEz2nEeOLIvcbDHpGGA" elementId="gridSpan" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Span" label="Span" closeable="true"/>

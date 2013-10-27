@@ -30,17 +30,6 @@ public class XFile {
 	}
 
 	public String getName() {
-		if (hasChildren) {
-			return getParentName(name);
-		} else {
-			return name;
-		}
-	}
-
-	private String getParentName(String name) {
-		if (getParent().getParent() != null) {
-			return getParent().getParentName(name) + "/" + name;
-		}
 		return name;
 	}
 
@@ -54,9 +43,10 @@ public class XFile {
 
 			if (hasChildren) {
 				for (int i = 1; i < new Random().nextInt(50) + 2; i++) {
-					String name = names[new Random().nextInt(5)+1];
-					children.add(new XFile(this, name, "this is a "
-							+ name + " subfolder", true));
+					String name = names[new Random().nextInt(5) + 1];
+					String parentName = parent == null ? "" : parent.getName() +"/";
+					children.add(new XFile(this, parentName + name,
+							"this is a " + name + " subfolder", true));
 				}
 				for (int i = 1; i < new Random().nextInt(15) + 1; i++) {
 					children.add(new XFile(this, "file " + i, "this is file "
