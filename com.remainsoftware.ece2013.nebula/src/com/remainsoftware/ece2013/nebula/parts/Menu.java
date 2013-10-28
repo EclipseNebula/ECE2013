@@ -44,39 +44,48 @@ public class Menu extends BasePart {
 		PShelf shelf = new PShelf(parent, SWT.BORDER);
 		shelf.setRenderer(new RedmondShelfRenderer());
 		shelf.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
-		PShelfItem agendaItem = new PShelfItem(shelf, 0);
-		agendaItem.setImage(ResourceManager.getPluginImage(
-				"com.remainsoftware.ece2013.nebula", "icons/agenda.png"));
-		agendaItem.setText("Agenda");
-		agendaItem.getBody();
-		agendaItem.getBody().setLayout(new GridLayout(1, false));
-
-		Link fLinkAboutMe = new Link(agendaItem.getBody(), SWT.NONE);
-		fLinkAboutMe.setFont(SWTResourceManager.getFont("Segoe UI", 13,
-				SWT.NORMAL));
-		fLinkAboutMe.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
-				false, 1, 1));
-		fLinkAboutMe.setText("<a>About Me</a>");
-		fLinkAboutMe.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				switchPerspective("perspective.about");
-				openView(AboutView.ID);
-			}
-		});
-
-		Link fLinkNebula = new Link(agendaItem.getBody(), 0);
-		fLinkNebula.setText("<a>The Nebula Project</a>");
-		fLinkNebula.setFont(SWTResourceManager.getFont("Segoe UI", 13,
-				SWT.NORMAL));
-		fLinkNebula.setBounds(0, 0, 428, 23);
-		fLinkNebula.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				switchPerspective("perspective.about");
-				openView(NebulaProject.ID);
-			}
-		});
+		PShelfItem welcomeItem = new PShelfItem(shelf, 0);
+		welcomeItem.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382983433_personal-information.png"));
+		welcomeItem.setText("Welcome");
+		welcomeItem.getBody();
+		welcomeItem.getBody().setLayout(new GridLayout(1, false));
+				
+				Link linkWelcome = new Link(welcomeItem.getBody(), 0);
+				linkWelcome.setText("<a>Welcome</a>");
+				linkWelcome.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+				linkWelcome.addSelectionListener(new SelectionAdapter() {
+					@Override
+					public void widgetSelected(SelectionEvent e) {
+						switchPerspective("perspective.welcome");
+					}
+				});
+		
+				Link fLinkAboutMe = new Link(welcomeItem.getBody(), SWT.NONE);
+				fLinkAboutMe.setFont(SWTResourceManager.getFont("Segoe UI", 13,
+						SWT.NORMAL));
+				fLinkAboutMe.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
+						false, 1, 1));
+				fLinkAboutMe.setText("<a>About Me</a>");
+				fLinkAboutMe.addSelectionListener(new SelectionAdapter() {
+					@Override
+					public void widgetSelected(SelectionEvent e) {
+						switchPerspective("perspective.about");
+						openView(AboutView.ID);
+					}
+				});
+		
+				Link fLinkNebula = new Link(welcomeItem.getBody(), 0);
+				fLinkNebula.setText("<a>The Nebula Project</a>");
+				fLinkNebula.setFont(SWTResourceManager.getFont("Segoe UI", 13,
+						SWT.NORMAL));
+				fLinkNebula.setBounds(0, 0, 428, 23);
+				fLinkNebula.addSelectionListener(new SelectionAdapter() {
+					@Override
+					public void widgetSelected(SelectionEvent e) {
+						switchPerspective("perspective.about");
+						openView(NebulaProject.ID);
+					}
+				});
 
 		PShelfItem widgetsItem = new PShelfItem(shelf, SWT.NONE);
 		widgetsItem.setImage(ResourceManager.getPluginImage(
@@ -299,6 +308,40 @@ public class Menu extends BasePart {
 				openView("scopeMusicView2");
 			}
 		});
+		
+		PShelfItem rapItem = new PShelfItem(shelf, 0);
+		rapItem.setText("RAP");
+		rapItem.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1383005346_firefox-icon.png"));
+		rapItem.getBody().setLayout(new GridLayout(1, false));
+		
+		Link rapLink1 = new Link(rapItem.getBody(), 0);
+		rapLink1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		rapLink1.setText("<a>Web Sources</a>");
+		rapLink1.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		rapLink1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(RAP);
+				openView("rapView");
+			}
+		});
+		
+		PShelfItem thankYouItem = new PShelfItem(shelf, 0);
+		thankYouItem.setText("Thank You, Goodbye");
+		thankYouItem.setImage(ResourceManager.getPluginImage("com.remainsoftware.ece2013.nebula", "icons/1382983918_plane-depart.png"));
+		thankYouItem.getBody().setLayout(new GridLayout(1, false));
+		
+		Link link = new Link(thankYouItem.getBody(), 0);
+		link.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		link.setText("<a>Thank You</a>");
+		link.setFont(SWTResourceManager.getFont("Segoe UI", 13, SWT.NORMAL));
+		link.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				switchPerspective(THANKS);
+			}
+		});
+		
 
 		PShelfItem lastItem = new PShelfItem(shelf, SWT.NONE);
 		lastItem.setText("");

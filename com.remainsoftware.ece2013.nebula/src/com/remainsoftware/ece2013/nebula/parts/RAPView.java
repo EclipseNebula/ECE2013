@@ -20,11 +20,11 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 
-public class AboutView extends BasePart {
+public class RAPView extends BasePart {
 
-	public static final String ID = "aboutView";
+	public static final String ID = "rapView";
 
-	public AboutView() {
+	public RAPView() {
 	}
 
 	private Composite comp1 = null;
@@ -44,19 +44,19 @@ public class AboutView extends BasePart {
 		tf = new TabFolder(container, SWT.NONE);
 
 		TabItem tbi1 = new TabItem(tf, SWT.NONE);
-		tbi1.setText("Wim Jongman");
+		tbi1.setText("Grid");
 		tbi1.setControl(getComp1(tf));
 
 		TabItem tbi2 = new TabItem(tf, SWT.NONE);
-		tbi2.setText("Google");
+		tbi2.setText("Picture Control");
 		tbi2.setControl(getComp2(tf));
 
 		TabItem tbi3 = new TabItem(tf, SWT.NONE);
-		tbi3.setText("Company");
+		tbi3.setText("Pagination Control");
 		tbi3.setControl(getComp3(tf));
 
 		TabItem tbi4 = new TabItem(tf, SWT.NONE);
-		tbi4.setText("http://github.com/EclipseNebula/ECE2013");
+		tbi4.setText("Oscilloscope in the browser");
 		tbi4.setControl(getComp4(tf));
 
 		TransitionManager _tm = new TransitionManager(new Transitionable() {
@@ -106,7 +106,7 @@ public class AboutView extends BasePart {
 			comp1 = new Composite(parent, SWT.NONE);
 			comp1.setLayout(new FillLayout());
 			Browser b = new Browser(comp1, SWT.PUSH);
-			b.setUrl("https://www.google.nl/search?q=whim");
+			b.setUrl("http://eclipsesource.com/blogs/2012/06/29/nebula-grid-widget-on-rap/");
 		}
 		return comp1;
 	}
@@ -116,7 +116,7 @@ public class AboutView extends BasePart {
 			comp2 = new Composite(parent, SWT.NONE);
 			comp2.setLayout(new FillLayout());
 			Browser b = new Browser(comp2, SWT.None);
-			b.setUrl("https://www.google.nl/search?q=wim+jongman+eclipse&safe=off&espv=210&es_sm=93&source=lnms&tbm=isch&sa=X&ei=DMNpUuGgJKXP0QWs_oDwBQ&ved=0CAcQ_AUoAQ&biw=1440&bih=770#facrc=_&imgdii=_&imgrc=_AwejwmH5SUPIM%3A%3BQPFg4g-ZOIQWDM%3Bhttp%253A%252F%252Flh4.googleusercontent.com%252F-v7Q6Kntbg5s%252FAAAAAAAAAAI%252FAAAAAAAAARc%252FRy_iKL2MNe4%252Fs512-c%252Fphoto.jpg%3Bhttp%253A%252F%252Findustrial-tsi-wim.blogspot.com%252F2012%252F10%252Fwhy-eclipse-e4-egg-laying-woolmilkpig.html%3B320%3B320");
+			b.setUrl("http://angelozerr.wordpress.com/2012/01/06/nebula_picture/");
 		}
 		return comp2;
 	}
@@ -126,7 +126,7 @@ public class AboutView extends BasePart {
 			comp3 = new Composite(parent, SWT.NONE);
 			comp3.setLayout(new FillLayout());
 			Browser b = new Browser(comp3, SWT.None);
-			b.setUrl("http://www.weltevree.com/");
+			b.setUrl("http://angelozerr.wordpress.com/2012/01/06/nebula_pagination/");
 		}
 		return comp3;
 	}
@@ -136,7 +136,7 @@ public class AboutView extends BasePart {
 			comp4 = new Composite(parent, SWT.NONE);
 			comp4.setLayout(new FillLayout());
 			Browser b = new Browser(comp4, SWT.None);
-			b.setUrl("http://github.com/EclipseNebula/ECE2013");
+			b.setUrl("http://eclipsesource.com/blogs/2010/08/25/an-oscilloscope-in-the-browser/");
 		}
 		return comp4;
 	}

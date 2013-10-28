@@ -17,6 +17,8 @@ public class BasePart {
 	protected static final String INITIAL = "perspective.initial";
 	protected static final String ABOUT = "perspective.about";
 	protected static final String OSCILLOSCOPE = "perspective.oscilloscope";
+	protected static final String RAP = "perspective.rap";
+	protected static final String THANKS = "perspective.thanks";
 	protected static final String GANTT = "perspective.gantt";
 	protected static final String GRID = "perspective.grid";
 	protected static final String VIS = "perspective.vis";

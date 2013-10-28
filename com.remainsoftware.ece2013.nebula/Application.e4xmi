@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_9C3IwDznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_9C3v2DznEeOr7bcr8S9GaQ">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_9C3IwDznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_9C3v2DznEeOr7bcr8S9GaQ">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_9C3v0DznEeOr7bcr8S9GaQ" label="com.remainsoftware.ece2013.nebula" width="1280" height="720">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_9C4W5TznEeOr7bcr8S9GaQ" selectedElement="_9C4W5jznEeOr7bcr8S9GaQ">
-      <children xsi:type="advanced:Perspective" xmi:id="_9C4W5jznEeOr7bcr8S9GaQ" elementId="perspective.initial" label="Initial">
+      <children xsi:type="advanced:Perspective" xmi:id="_9C4W5jznEeOr7bcr8S9GaQ" elementId="perspective.welcome" label="Welcome">
         <children xsi:type="basic:PartSashContainer" xmi:id="_9C4W5zznEeOr7bcr8S9GaQ" containerData="" horizontal="true">
           <children xsi:type="advanced:Placeholder" xmi:id="__eEgUD1-EeOKpp9vTmDyEw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          <children xsi:type="basic:PartStack" xmi:id="_9C4W6DznEeOr7bcr8S9GaQ" elementId="" containerData="6">
-            <children xsi:type="basic:Part" xmi:id="_fJkMQD2AEeOKpp9vTmDyEw" elementId="" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.LogoPart"/>
-          </children>
+          <children xsi:type="basic:Part" xmi:id="_fJkMQD2AEeOKpp9vTmDyEw" elementId="" containerData="4" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.WelcomePart"/>
         </children>
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_Usk64D1-EeOKpp9vTmDyEw" elementId="perspective.about" label="About">
@@ -96,15 +94,22 @@
           </children>
         </children>
       </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_MVNnUD_vEeObX4rW0lZQQg" elementId="perspective.thanks" label="Thank You">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_MVNnUT_vEeObX4rW0lZQQg" containerData="" horizontal="true">
+          <children xsi:type="advanced:Placeholder" xmi:id="_MVNnUj_vEeObX4rW0lZQQg" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          <children xsi:type="basic:Part" xmi:id="_MVNnVD_vEeObX4rW0lZQQg" elementId="ThanksView" containerData="4" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.GoodByePart" label="Sum" closeable="true"/>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_17WkMEAAEeO9YuMqfh-0Aw" elementId="perspective.rap" label="RAP">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_17WkMUAAEeO9YuMqfh-0Aw" containerData="" horizontal="true">
+          <children xsi:type="advanced:Placeholder" xmi:id="_17WkMkAAEeO9YuMqfh-0Aw" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
+          <children xsi:type="basic:Part" xmi:id="_17WkNEAAEeO9YuMqfh-0Aw" elementId="rapView" containerData="4" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.RAPView" label="RAP" closeable="true"/>
+        </children>
+      </children>
     </children>
     <sharedElements xsi:type="basic:Part" xmi:id="_M8KHQDzpEeOr7bcr8S9GaQ" elementId="menuPart" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.parts.Menu" label="Menu">
       <tags>NoMove</tags>
     </sharedElements>
-    <trimBars xmi:id="_9C4W6jznEeOr7bcr8S9GaQ">
-      <children xsi:type="menu:ToolBar" xmi:id="_9C4W6zznEeOr7bcr8S9GaQ" elementId="toolbar:org.eclipse.ui.main.toolbar">
-        <children xsi:type="menu:ToolControl" xmi:id="_CuS4MD0BEeOKpp9vTmDyEw" elementId="com.remainsoftware.ece2013.nebula.toolcontrol.0"/>
-      </children>
-    </trimBars>
   </children>
   <handlers xmi:id="_9C3v3DznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.quitCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.QuitHandler" command="_9C3v2zznEeOr7bcr8S9GaQ"/>
   <handlers xmi:id="_9C3v4DznEeOr7bcr8S9GaQ" elementId="com.remainsoftware.ece2013.nebula.handler.openCommand" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.handlers.OpenHandler" command="_9C3v3zznEeOr7bcr8S9GaQ"/>
