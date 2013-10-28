@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_9C3IwDznEeOr7bcr8S9GaQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_9C3v2DznEeOr7bcr8S9GaQ">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_9C3v0DznEeOr7bcr8S9GaQ" label="com.remainsoftware.ece2013.nebula" width="1280" height="720">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_9C3v0DznEeOr7bcr8S9GaQ" label="com.remainsoftware.ece2013.nebula" iconURI="platform:/plugin/com.remainsoftware.ece2013.nebula/icons/16px.png" width="1280" height="720">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_9C4W5TznEeOr7bcr8S9GaQ" selectedElement="_9C4W5jznEeOr7bcr8S9GaQ">
       <children xsi:type="advanced:Perspective" xmi:id="_9C4W5jznEeOr7bcr8S9GaQ" elementId="perspective.welcome" label="Welcome">
         <children xsi:type="basic:PartSashContainer" xmi:id="_9C4W5zznEeOr7bcr8S9GaQ" containerData="" horizontal="true">
@@ -57,11 +57,11 @@
       <children xsi:type="advanced:Perspective" xmi:id="_MS0eAD2nEeOLIvcbDHpGGA" elementId="perspective.grid" label="Grid">
         <children xsi:type="basic:PartSashContainer" xmi:id="_MS0eAT2nEeOLIvcbDHpGGA" containerData="" horizontal="true">
           <children xsi:type="advanced:Placeholder" xmi:id="_MS1FED2nEeOLIvcbDHpGGA" elementId="" containerData="1" ref="_M8KHQDzpEeOr7bcr8S9GaQ"/>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_MS1FET2nEeOLIvcbDHpGGA" elementId="" containerData="4">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_MS1FET2nEeOLIvcbDHpGGA" elementId="" containerData="2">
             <children xsi:type="basic:Part" xmi:id="_MS1FEj2nEeOLIvcbDHpGGA" elementId="gridSum" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Sum" label="Sum" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_MS1FEz2nEeOLIvcbDHpGGA" elementId="gridSpan" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Span" label="Span" closeable="true"/>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_MS1FFD2nEeOLIvcbDHpGGA" elementId="" containerData="4">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_MS1FFD2nEeOLIvcbDHpGGA" elementId="" containerData="2">
             <children xsi:type="basic:Part" xmi:id="_MS1FFT2nEeOLIvcbDHpGGA" elementId="gridrowSpan" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Wrap" label="Justify" closeable="true"/>
             <children xsi:type="basic:Part" xmi:id="_MS1FFj2nEeOLIvcbDHpGGA" elementId="gridCheckbox" contributionURI="bundleclass://com.remainsoftware.ece2013.nebula/com.remainsoftware.ece2013.nebula.grid.Checkbox" label="Checkbox" closeable="true"/>
           </children>

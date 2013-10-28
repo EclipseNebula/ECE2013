@@ -3,6 +3,7 @@
 
 <product name="com.remainsoftware.ece2013.nebula" id="com.remainsoftware.ece2013.nebula.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -11,7 +12,20 @@
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/com.remainsoftware.ece2013.nebula/icons/16px.png" i32="/com.remainsoftware.ece2013.nebula/icons/32px.png" i64="/com.remainsoftware.ece2013.nebula/icons/64px.png" i128="/com.remainsoftware.ece2013.nebula/icons/128px.png"/>
+
+
+   <launcher name="NebulaDemo">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallLow="/com.remainsoftware.ece2013.nebula/icons/16px8.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
 
    <plugins>
       <plugin id="com.ibm.icu"/>
